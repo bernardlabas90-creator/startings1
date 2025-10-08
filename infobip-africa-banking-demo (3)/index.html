@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infobip Africa Banking Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <span class="logo-text">Infobip</span>
+                        <span class="logo-subtitle">Africa Banking Demo</span>
+                    </div>
+                    <div class="header-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">400M+</span>
+                            <span class="stat-label">WhatsApp Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">78%</span>
+                            <span class="stat-label">Banking Digitalization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-button active" data-section="country-selection">🌍 Select Market</button>
+                    <button class="tab-button" data-section="product-config">🛠️ Configure Products</button>
+                    <button class="tab-button" data-section="mobile-demo">📱 Mobile Demo</button>
+                    <button class="tab-button" data-section="analytics">📊 Analytics</button>
+                    <button class="tab-button" data-section="roi-calculator">💰 ROI Calculator</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Country Selection Section -->
+            <section id="country-selection" class="section active">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Select Your African Market</h2>
+                        <p>Choose your target market to see tailored insights and opportunities</p>
+                    </div>
+                    
+                    <div class="country-grid">
+                        <div class="country-card" data-country="nigeria">
+                            <div class="country-header">
+                                <span class="country-flag">🇳🇬</span>
+                                <h3>Nigeria</h3>
+                                <span class="country-population">218M People</span>
+                            </div>
+                            <div class="country-stats">
+                                <div class="stat-row">
+                                    <span>WhatsApp Penetration</span>
+                                    <span class="stat-highlight">95.1%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Banking Digitalization</span>
+                                    <span class="stat-highlight">41%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Mobile Money Users</span>
+                                    <span class="stat-highlight">51M</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Avg Monthly Salary</span>
+                                    <span class="stat-highlight">₦120,000</span>
+                                </div>
+                            </div>
+                            <div class="country-players">
+                                <strong>Key Players:</strong> GTBank, Access Bank, First Bank, UBA, Zenith Bank
+                            </div>
+                            <div class="country-opportunities">
+                                <div class="opportunity-tag">Mobile Money Growth</div>
+                                <div class="opportunity-tag">Digital Payments Surge</div>
+                                <div class="opportunity-tag">Youth Demographics</div>
+                            </div>
+                        </div>
+
+                        <div class="country-card" data-country="kenya">
+                            <div class="country-header">
+                                <span class="country-flag">🇰🇪</span>
+                                <h3>Kenya</h3>
+                                <span class="country-population">56M People</span>
+                            </div>
+                            <div class="country-stats">
+                                <div class="stat-row">
+                                    <span>WhatsApp Penetration</span>
+                                    <span class="stat-highlight">97%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Banking Digitalization</span>
+                                    <span class="stat-highlight">78%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Mobile Money Users</span>
+                                    <span class="stat-highlight">32M</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Avg Monthly Salary</span>
+                                    <span class="stat-highlight">KSh 65,000</span>
+                                </div>
+                            </div>
+                            <div class="country-players">
+                                <strong>Key Players:</strong> Safaricom M-Pesa, Equity Bank, KCB Bank, Absa, Co-op Bank
+                            </div>
+                            <div class="country-opportunities">
+                                <div class="opportunity-tag">M-Pesa Ecosystem</div>
+                                <div class="opportunity-tag">Digital Lending</div>
+                                <div class="opportunity-tag">Rural Expansion</div>
+                            </div>
+                        </div>
+
+                        <div class="country-card" data-country="southAfrica">
+                            <div class="country-header">
+                                <span class="country-flag">🇿🇦</span>
+                                <h3>South Africa</h3>
+                                <span class="country-population">60M People</span>
+                            </div>
+                            <div class="country-stats">
+                                <div class="stat-row">
+                                    <span>WhatsApp Penetration</span>
+                                    <span class="stat-highlight">96%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Banking Digitalization</span>
+                                    <span class="stat-highlight">85%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Mobile Money Users</span>
+                                    <span class="stat-highlight">15M</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Avg Monthly Salary</span>
+                                    <span class="stat-highlight">R 23,000</span>
+                                </div>
+                            </div>
+                            <div class="country-players">
+                                <strong>Key Players:</strong> Standard Bank, FNB, Absa, Nedbank, Capitec
+                            </div>
+                            <div class="country-opportunities">
+                                <div class="opportunity-tag">Digital Transformation</div>
+                                <div class="opportunity-tag">Open Banking</div>
+                                <div class="opportunity-tag">AI Adoption</div>
+                            </div>
+                        </div>
+
+                        <div class="country-card" data-country="ghana">
+                            <div class="country-header">
+                                <span class="country-flag">🇬🇭</span>
+                                <h3>Ghana</h3>
+                                <span class="country-population">33M People</span>
+                            </div>
+                            <div class="country-stats">
+                                <div class="stat-row">
+                                    <span>WhatsApp Penetration</span>
+                                    <span class="stat-highlight">89%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Banking Digitalization</span>
+                                    <span class="stat-highlight">58%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Mobile Money Users</span>
+                                    <span class="stat-highlight">18M</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>Avg Monthly Salary</span>
+                                    <span class="stat-highlight">GH₵ 2,800</span>
+                                </div>
+                            </div>
+                            <div class="country-players">
+                                <strong>Key Players:</strong> MTN MoMo, Vodafone Cash, GCB Bank, Ecobank, Access Bank
+                            </div>
+                            <div class="country-opportunities">
+                                <div class="opportunity-tag">Mobile Money Leadership</div>
+                                <div class="opportunity-tag">Cross-border Payments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Configuration Section -->
+            <section id="product-config" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Configure Infobip Products</h2>
+                        <p>Select and customize the products that best fit your banking needs</p>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card" data-product="moments">
+                            <div class="product-header">
+                                <div class="product-icon">🚀</div>
+                                <div class="product-title">
+                                    <h3>Moments</h3>
+                                    <span class="product-tagline">Customer Engagement Platform & CDP</span>
+                                </div>
+                                <div class="product-toggle">
+                                    <label class="toggle">
+                                        <input type="checkbox" class="product-checkbox" data-product="moments">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <p>Complete customer data platform with journey automation, AI-driven personalization, and advanced analytics.</p>
+                                
+                                <div class="product-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Customer Data Platform (People)</li>
+                                        <li>Journey Automation & Flows</li>
+                                        <li>A/B Testing & AI Optimization</li>
+                                        <li>Advanced Analytics & Reporting</li>
+                                        <li>Real-time Personalization</li>
+                                        <li>Behavioral Segmentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-metrics">
+                                    <h4>Impact Metrics:</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">25-35%</span>
+                                            <span class="metric-label">Conversion Uplift</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">50-70%</span>
+                                            <span class="metric-label">CAC Reduction</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">+42%</span>
+                                            <span class="metric-label">Customer LTV</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">+138%</span>
+                                            <span class="metric-label">Engagement</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-use-cases">
+                                    <h4>Banking Use Cases:</h4>
+                                    <div class="use-cases">
+                                        <span class="use-case">Customer Reactivation</span>
+                                        <span class="use-case">Cross-sell & Upsell</span>
+                                        <span class="use-case">Onboarding Optimization</span>
+                                        <span class="use-case">Churn Prevention</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-product="conversations">
+                            <div class="product-header">
+                                <div class="product-icon">💬</div>
+                                <div class="product-title">
+                                    <h3>Conversations</h3>
+                                    <span class="product-tagline">Cloud Contact Center Solution (CCaaS)</span>
+                                </div>
+                                <div class="product-toggle">
+                                    <label class="toggle">
+                                        <input type="checkbox" class="product-checkbox" data-product="conversations">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <p>Omnichannel contact center with AI-powered routing, real-time analytics, and seamless agent experience.</p>
+                                
+                                <div class="product-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Omnichannel Agent Interface</li>
+                                        <li>Intelligent Queue Management</li>
+                                        <li>Real-time Monitoring & Analytics</li>
+                                        <li>Customer Context & History</li>
+                                        <li>AI-Powered Routing</li>
+                                        <li>Supervisor Dashboard</li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-metrics">
+                                    <h4>Impact Metrics:</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">+60%</span>
+                                            <span class="metric-label">Agent Efficiency</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">85%</span>
+                                            <span class="metric-label">Faster Resolution</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">4.7/5</span>
+                                            <span class="metric-label">Customer Satisfaction</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">35%</span>
+                                            <span class="metric-label">Cost Reduction</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-use-cases">
+                                    <h4>Banking Use Cases:</h4>
+                                    <div class="use-cases">
+                                        <span class="use-case">24/7 Customer Support</span>
+                                        <span class="use-case">Sales Conversion</span>
+                                        <span class="use-case">Technical Support</span>
+                                        <span class="use-case">Multi-language Support</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-product="answers">
+                            <div class="product-header">
+                                <div class="product-icon">🤖</div>
+                                <div class="product-title">
+                                    <h3>Answers</h3>
+                                    <span class="product-tagline">AI Chatbot Building Platform</span>
+                                </div>
+                                <div class="product-toggle">
+                                    <label class="toggle">
+                                        <input type="checkbox" class="product-checkbox" data-product="answers">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <p>No-code conversational AI platform with advanced NLP, multi-channel deployment, and continuous learning.</p>
+                                
+                                <div class="product-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Intent-based AI Engine</li>
+                                        <li>Multi-language Support (70+ languages)</li>
+                                        <li>Seamless Agent Handover</li>
+                                        <li>Analytics & Optimization</li>
+                                        <li>No-code Flow Builder</li>
+                                        <li>Integration APIs</li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-metrics">
+                                    <h4>Impact Metrics:</h4>
+                                    <div class="metrics-grid">
+                                        <div class="metric">
+                                            <span class="metric-value">70%</span>
+                                            <span class="metric-label">Cost Reduction</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">80%</span>
+                                            <span class="metric-label">Automation Rate</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">&lt;5s</span>
+                                            <span class="metric-label">Response Time</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">85%+</span>
+                                            <span class="metric-label">Satisfaction</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-use-cases">
+                                    <h4>Banking Use Cases:</h4>
+                                    <div class="use-cases">
+                                        <span class="use-case">Customer Service Automation</span>
+                                        <span class="use-case">Lead Qualification</span>
+                                        <span class="use-case">Account Management</span>
+                                        <span class="use-case">Transaction Support</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="channel-selection">
+                        <h3>Communication Channels</h3>
+                        <div class="channels-grid">
+                            <div class="channel-card" data-channel="whatsapp">
+                                <div class="channel-icon">💬</div>
+                                <h4>WhatsApp Business</h4>
+                                <div class="channel-stats">
+                                    <span>Open Rate: 98%</span>
+                                    <span>$0.05-$0.15 per message</span>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" class="channel-checkbox" data-channel="whatsapp">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="channel-card" data-channel="sms">
+                                <div class="channel-icon">📱</div>
+                                <h4>SMS</h4>
+                                <div class="channel-stats">
+                                    <span>Open Rate: 98%</span>
+                                    <span>$0.02-$0.08 per message</span>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" class="channel-checkbox" data-channel="sms">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="channel-card" data-channel="email">
+                                <div class="channel-icon">📧</div>
+                                <h4>Email</h4>
+                                <div class="channel-stats">
+                                    <span>Open Rate: 22%</span>
+                                    <span>$0.001-$0.01 per message</span>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" class="channel-checkbox" data-channel="email">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="channel-card" data-channel="voice">
+                                <div class="channel-icon">📞</div>
+                                <h4>Voice</h4>
+                                <div class="channel-stats">
+                                    <span>Connection Rate: 85%</span>
+                                    <span>$0.10-$0.25 per minute</span>
+                                </div>
+                                <label class="toggle">
+                                    <input type="checkbox" class="channel-checkbox" data-channel="voice">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobile Demo Section -->
+            <section id="mobile-demo" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Interactive Banking Demo</h2>
+                        <p>Experience how conversational banking transforms customer engagement</p>
+                    </div>
+
+                    <div class="demo-layout">
+                        <div class="demo-controls">
+                            <h3>Banking Scenarios</h3>
+                            <div class="scenario-list">
+                                <div class="scenario-item active" data-scenario="account-reactivation">
+                                    <div class="scenario-icon">🏦</div>
+                                    <div class="scenario-info">
+                                        <h4>Account Reactivation</h4>
+                                        <p>Conversion: 28% | ROI: 340%</p>
+                                    </div>
+                                </div>
+                                <div class="scenario-item" data-scenario="loan-application">
+                                    <div class="scenario-icon">💳</div>
+                                    <div class="scenario-info">
+                                        <h4>Loan Application</h4>
+                                        <p>Conversion: 85% | Time: 5 min</p>
+                                    </div>
+                                </div>
+                                <div class="scenario-item" data-scenario="mobile-money-transfer">
+                                    <div class="scenario-icon">📲</div>
+                                    <div class="scenario-info">
+                                        <h4>Money Transfer</h4>
+                                        <p>Success: 92% | Time: 30s</p>
+                                    </div>
+                                </div>
+                                <div class="scenario-item" data-scenario="account-opening">
+                                    <div class="scenario-icon">🆔</div>
+                                    <div class="scenario-info">
+                                        <h4>Account Opening</h4>
+                                        <p>Completion: 78% | Time: 8 min</p>
+                                    </div>
+                                </div>
+                                <div class="scenario-item" data-scenario="investment-advisory">
+                                    <div class="scenario-icon">📈</div>
+                                    <div class="scenario-info">
+                                        <h4>Investment Advisory</h4>
+                                        <p>Conversion: 65% | Avg: R50,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mobile-phone">
+                            <div class="phone-frame">
+                                <div class="phone-header">
+                                    <div class="phone-status">
+                                        <span class="time">2:47 PM</span>
+                                        <div class="phone-indicators">
+                                            <span class="signal">📶</span>
+                                            <span class="wifi">📶</span>
+                                            <span class="battery">🔋</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whatsapp-header">
+                                    <div class="contact-info">
+                                        <div class="avatar" id="bank-avatar">🏦</div>
+                                        <div class="contact-details">
+                                            <h4 id="bank-name">Access Bank</h4>
+                                            <span class="status">Online</span>
+                                        </div>
+                                    </div>
+                                    <div class="whatsapp-actions">
+                                        <span class="action-icon">📞</span>
+                                        <span class="action-icon">📹</span>
+                                        <span class="action-icon">⋮</span>
+                                    </div>
+                                </div>
+                                <div class="chat-container" id="chat-container">
+                                    <!-- Chat messages will be inserted here -->
+                                </div>
+                                <div class="message-input-container">
+                                    <div class="message-options" id="message-options">
+                                        <!-- Quick reply buttons will appear here -->
+                                    </div>
+                                    <div class="input-area">
+                                        <input type="text" id="message-input" placeholder="Type a message..." disabled>
+                                        <button class="send-button" id="send-button">
+                                            <span>➤</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="live-analytics">
+                            <h3>Live Analytics</h3>
+                            <div class="analytics-grid">
+                                <div class="analytics-card">
+                                    <div class="analytics-title">Engagement Score</div>
+                                    <div class="analytics-value" id="engagement-score">0/100</div>
+                                    <div class="analytics-chart">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="engagement-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analytics-card">
+                                    <div class="analytics-title">Conversion Probability</div>
+                                    <div class="analytics-value" id="conversion-probability">0%</div>
+                                    <div class="analytics-chart">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="conversion-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analytics-card">
+                                    <div class="analytics-title">Interest Level</div>
+                                    <div class="analytics-value" id="interest-level">Low</div>
+                                    <div class="analytics-indicator">
+                                        <div class="indicator-dot" id="interest-dot"></div>
+                                    </div>
+                                </div>
+                                <div class="analytics-card">
+                                    <div class="analytics-title">Data Points Collected</div>
+                                    <div class="analytics-value" id="data-points">0</div>
+                                    <div class="data-points-list" id="data-points-list">
+                                        <!-- Data points will be added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Conversational Banking Impact</h2>
+                        <p>Real metrics showing the transformation of banking customer experience</p>
+                    </div>
+
+                    <div class="metrics-overview">
+                        <div class="metric-card">
+                            <div class="metric-icon">😊</div>
+                            <div class="metric-content">
+                                <div class="metric-title">Customer Satisfaction</div>
+                                <div class="metric-comparison">
+                                    <div class="metric-old">Traditional: 3.2/5</div>
+                                    <div class="metric-new">Conversational: 4.8/5</div>
+                                    <div class="metric-improvement">+47% improvement</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">⚡</div>
+                            <div class="metric-content">
+                                <div class="metric-title">Response Time</div>
+                                <div class="metric-comparison">
+                                    <div class="metric-old">Traditional: 3-5 minutes</div>
+                                    <div class="metric-new">Conversational: &lt;5 seconds</div>
+                                    <div class="metric-improvement">97% faster</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">💰</div>
+                            <div class="metric-content">
+                                <div class="metric-title">Cost Reduction</div>
+                                <div class="metric-comparison">
+                                    <div class="metric-old">Agent Cost: $15/interaction</div>
+                                    <div class="metric-new">Chatbot Cost: $4.50/interaction</div>
+                                    <div class="metric-improvement">70% reduction</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-icon">📈</div>
+                            <div class="metric-content">
+                                <div class="metric-title">Conversion Rate</div>
+                                <div class="metric-comparison">
+                                    <div class="metric-old">Traditional: 12%</div>
+                                    <div class="metric-new">Conversational: 35%</div>
+                                    <div class="metric-improvement">+138% improvement</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="charts-section">
+                        <div class="chart-container" style="position: relative; height: 400px;">
+                            <h3>Banking Metrics Comparison</h3>
+                            <canvas id="metricsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ROI Calculator Section -->
+            <section id="roi-calculator" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>ROI Calculator</h2>
+                        <p>Calculate the business impact of conversational banking for your institution</p>
+                    </div>
+
+                    <div class="calculator-layout">
+                        <div class="calculator-inputs">
+                            <div class="input-group">
+                                <label class="form-label">Monthly Customer Interactions</label>
+                                <input type="number" id="monthly-interactions" class="form-control" value="50000" min="1000">
+                            </div>
+
+                            <div class="input-group">
+                                <label class="form-label">Current Cost per Interaction</label>
+                                <input type="number" id="current-cost" class="form-control" value="15" min="1" step="0.1">
+                            </div>
+
+                            <div class="input-group">
+                                <label class="form-label">Current Conversion Rate (%)</label>
+                                <input type="number" id="current-conversion" class="form-control" value="12" min="1" max="100">
+                            </div>
+
+                            <div class="input-group">
+                                <label class="form-label">Average Transaction Value</label>
+                                <input type="number" id="avg-transaction" class="form-control" value="250" min="1">
+                            </div>
+
+                            <button class="btn btn--primary" id="calculate-roi">Calculate ROI</button>
+                        </div>
+
+                        <div class="roi-results" id="roi-results">
+                            <div class="results-grid">
+                                <div class="result-card">
+                                    <div class="result-title">Monthly Cost Savings</div>
+                                    <div class="result-value" id="cost-savings">$0</div>
+                                    <div class="result-description">70% reduction in interaction costs</div>
+                                </div>
+
+                                <div class="result-card">
+                                    <div class="result-title">Revenue Increase</div>
+                                    <div class="result-value" id="revenue-increase">$0</div>
+                                    <div class="result-description">138% improvement in conversion rates</div>
+                                </div>
+
+                                <div class="result-card">
+                                    <div class="result-title">Annual ROI</div>
+                                    <div class="result-value" id="annual-roi">0%</div>
+                                    <div class="result-description">Return on investment</div>
+                                </div>
+
+                                <div class="result-card">
+                                    <div class="result-title">Payback Period</div>
+                                    <div class="result-value" id="payback-period">0 months</div>
+                                    <div class="result-description">Time to break even</div>
+                                </div>
+                            </div>
+
+                            <div class="implementation-timeline">
+                                <h3>Implementation Roadmap</h3>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">1</div>
+                                        <div class="timeline-content">
+                                            <h4>Discovery & Planning</h4>
+                                            <p>2-3 weeks: Assessment, use case definition, and technical requirements</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">2</div>
+                                        <div class="timeline-content">
+                                            <h4>Integration & Development</h4>
+                                            <p>4-6 weeks: API integration, chatbot training, and flow configuration</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">3</div>
+                                        <div class="timeline-content">
+                                            <h4>Testing & Optimization</h4>
+                                            <p>2-3 weeks: User testing, performance optimization, and fine-tuning</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">4</div>
+                                        <div class="timeline-content">
+                                            <h4>Launch & Monitoring</h4>
+                                            <p>1 week: Go-live, monitoring, and continuous improvement</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Notification System -->
+        <div id="notifications" class="notifications-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
